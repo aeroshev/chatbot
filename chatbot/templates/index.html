@@ -6,11 +6,11 @@
 </head>
 <body>
     {% if message %}
-        <h1>message</h1>
+        <h2>message</h2>
     {% endif %}
     <ul>
         {% for i in range(10) %}
-            <li>i</li>
+            <li>{{ i }}</li>
         {% endfor %}
     </ul>
 </body>
