@@ -25,7 +25,7 @@ SECRET_KEY = SK
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['artyom99.pythonanywhere.com']
+ALLOWED_HOSTS = ['artyom99.pythonanywhere.com', 'localhost']
 
 
 # Application definition

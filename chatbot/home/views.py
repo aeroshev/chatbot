@@ -1,6 +1,6 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def home(request):
-    message = 'Hello, Django!'
-    return HttpResponse(message)
+    context = {'message': 'Hello, Django!'}
+    return render(request, 'index.html', context)
