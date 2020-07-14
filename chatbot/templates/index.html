@@ -5,6 +5,11 @@
     <title>Hello Django</title>
 </head>
 <body>
-    <h1>Welcome to Django!</h1>
+    {% if message %}
+        <h1>message</h1>
+    {% endif %}
+    {% for i in range(10) %}
+        <li>i</li>
+    {% endfor %}
 </body>
 </html>
