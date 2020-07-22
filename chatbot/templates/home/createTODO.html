@@ -1,0 +1,27 @@
+{% extends 'home/base.html' %}
+{% block title %}
+Create new target
+{% endblock %}
+{% block content %}
+    <form class="form-offset">
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control" id="Name" aria-describedby="NameHelp" placeholder="Name">
+            <small id="NamelHelp" class="form-text text-muted">Give a short name of target</small>
+        </div>
+        <div class="form-group">
+            <label for="Description">Description</label>
+            <textarea class="form-control" id="Description" rows="3"></textarea>
+            <small id="DescriptionHelp" class="form-text text-muted">Write a step complete</small>
+        </div>
+        <div class="form-group">
+            <label for="Priority">Select a priority</label>
+            <select class="form-control" id="Priority">
+                <option>High priority</option>
+                <option>Medium</option>
+                <option>Ordinary</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+{% endblock %}
